@@ -1,0 +1,35 @@
+{
+  "build": {
+    "core": "nRF5",
+    "cpu": "cortex-m0",
+    "extra_flags": "-DARDUINO_NRF51822 -DUSE_LFRC",
+    "f_cpu": "16000000L",
+    "ldscript": "nrf51_xxaa.ld",
+    "mcu": "nrf51822",
+    "variant": "nrf51822"
+  },
+  "connectivity": [
+    "bluetooth"
+  ],
+  "debug": {
+    "onboard_tools": [
+    ],
+    "svd_path": "nrf51.svd",
+    "jlink_device": "nRF51822_xxAA"
+  },
+  "frameworks": [
+    "arduino",
+    "mbed"
+  ],
+  "name": "nrf51822",
+  "upload": {
+    "maximum_ram_size": 16384,
+    "maximum_size": 262144,
+    "protocol": "blackmagic",
+    "protocols": [
+      "blackmagic"
+    ]
+  },
+  "url": "",
+  "vendor": "DIY"
+}
